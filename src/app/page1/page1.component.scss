@@ -1,3 +1,7 @@
 span.item-num, span.item-name {
   margin-left: 10px;
 }
+
+div[class*="item-"] {
+  padding: 5px;
+}

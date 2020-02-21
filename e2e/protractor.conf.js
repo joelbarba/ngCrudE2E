@@ -13,6 +13,10 @@ exports.config = {
     './src/**/*.e2e-spec.ts'
   ],
   capabilities: {
+    chromeOptions: {
+      args: [ "--headless" ]
+      // args: ["--window-size=800x600"]
+    },
     browserName: 'chrome'
   },
   directConnect: true,
