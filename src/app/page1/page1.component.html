@@ -1,0 +1,14 @@
+<p>page1</p>
+
+<div>
+  <button class="add-btn" (click)="addItem()">Add Item</button>
+  <ul>
+    <li *ngFor="let item of myList; let ind = index">
+      <div class="item-{{ind}}">
+        <button class="del-btn" (click)="delItem(item)">Delete</button>
+        <span class="item-num">{{ind}}</span>
+        <span class="item-name">{{item.username}}</span>
+      </div>
+    </li>
+  </ul>
+</div>
